@@ -1,36 +1,31 @@
-import React, {useEffect} from "react";
+import React, {useState, useEffect} from "react";
+import PaintingList from "./PaintingList";
 
 
-function HomePage({searchTerm, onChange}) {
+function HomePage() {
+
+  const [paintings, setPaintings] = useState([])
 
   useEffect(() => {
 
-    fetch("http://localhost:6001/plants")
+    fetch("http://localhost:3000/paintings")
 
       .then((r) => r.json())
 
-      .then(data => console.log(data));
+      .then(setPaintings);
 
   }, []);
 
-  function handleChange(e){
-    onChange(e.target.value);
+//  function handleChange(e){
+//    onChange(e.target.value);
 
-  }
+//  }
 
 
   return (
-    <div className="searchbar">
-      <label htmlFor="search">Search Plants:</label>
-      <input
-        type="text"
-        id="search"
-        placeholder="Type a name to search..."
-        onChange={handleChange}
-        value = {searchTerm}
-      />
-    </div>
+    <main>
+      <PaintingList paintings = {paintings} />
+    </main>
   );
 }
-
 export default HomePage;

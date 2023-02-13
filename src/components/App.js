@@ -6,6 +6,8 @@ import NavBar from "./NavBar";
 import BottomPage from "./BottomPage";
 
 function App() {
+
+  
   return (
     <div className="app">
       <Header />

@@ -1,24 +1,20 @@
-import React, {useState} from "react";
+import React from "react";
 
-function PaintingCard({ name, image, price}) {
+function PaintingCard({ name, image, season, youtube}) {
 
-    const [instock, setInStock] = useState(true);
+//    const [instock, setInStock] = useState(true);
 
-    function handleClick() {
-      setInStock((instock => !instock));
-    }
+//    function handleClick() {
+//      setInStock((instock => !instock));
+//    }
 
 
   return (
     <li className="card">
-      <img src={image} alt={name} />
       <h4>{name}</h4>
-      <p>Price: ${price}</p>
-      {instock ? (
-        <button className="primary" onClick = {handleClick}>In Stock</button>
-      ) : (
-        <button onClick = {handleClick}>Out of Stock</button>
-      )}
+      <img src={image} alt={name} />
+      <p>Season: {season}</p>      
+      <p>{youtube}</p>
     </li>
   );
 }
