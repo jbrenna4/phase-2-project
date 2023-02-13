@@ -1,7 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 
 function HomePage({searchTerm, onChange}) {
+
+  useEffect(() => {
+
+    fetch("http://localhost:6001/plants")
+
+      .then((r) => r.json())
+
+      .then(data => console.log(data));
+
+  }, []);
 
   function handleChange(e){
     onChange(e.target.value);
