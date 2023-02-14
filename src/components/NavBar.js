@@ -1,22 +1,27 @@
 import React from "react";
+
 import RandomQuote from "./RandomQuote";
+
+import { NavLink } from "react-router-dom"
+
 
 
 function NavBar() {
+
     return (
     <nav class="topnav">
         <ul>
           <li>
-            <a href="/HomePage">Home</a>
+            <NavLink exact to="/">Home</NavLink>
           </li>
           <li>
-            <a href="./Bio">Bio</a>
+            <NavLink to="/about">Bio</NavLink>
           </li>
           <li>
-            <a href="./PaintingList">Paintings</a>
+            <NavLink to="/paintings">Paintings</NavLink>
           </li>
           <li>
-            <a href="./contact">Contact</a>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
           <div class="search">
             <select id="select-color" placeholder="Pick a color...">

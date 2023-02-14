@@ -80,3 +80,8 @@ code {
   padding: 3px 17px;
   width: 129px;
 }
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
