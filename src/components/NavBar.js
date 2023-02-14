@@ -1,5 +1,9 @@
 import React from "react";
+
+import RandomQuote from "./RandomQuote";
+
 import { NavLink } from "react-router-dom"
+
 
 
 function NavBar() {
@@ -37,6 +41,7 @@ function NavBar() {
               Sort by season
             </label>
           </div>
+          <RandomQuote />
         </ul>
     </nav>
   )
