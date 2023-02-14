@@ -11,19 +11,21 @@ function PaintingCard({ name, image, season, youtube}) {
    }
     else {
       setClicked(true);
-    }
+    }}
   return (
+    <div>
     <li className="card">
       <h4>{name}</h4>
       <img 
       src={image} 
       alt={name} 
-      onClick = {handleClick}
+      // onClick = {handleClick}
       />
       <p>Season: {season}</p>      
       <p>{youtube}</p>
     </li>
+    </div>
   );
 }
-}
+
 export default PaintingCard;
