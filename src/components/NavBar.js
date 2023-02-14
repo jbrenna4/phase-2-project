@@ -8,6 +8,8 @@ import { NavLink } from "react-router-dom"
 
 function NavBar() {
 
+    //eventListener goes here
+
     return (
     <nav class="topnav">
         <ul>
