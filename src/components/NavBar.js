@@ -6,9 +6,13 @@ import { NavLink } from "react-router-dom"
 
 
 
-function NavBar() {
+function NavBar({ searchColor, onChangeColor }) {
 
     //eventListener goes here
+    function handleChangeColor(event) {
+      onChangeColor(event.target.value);
+    };
+
 
     return (
     <nav class="topnav">
@@ -26,7 +30,7 @@ function NavBar() {
             <NavLink to="/contact">Contact</NavLink>
           </li>
           <div class="search">
-            <select id="select-color" placeholder="Pick a color...">
+            <select id="select-color" placeholder="Pick a color..." onChange={handleChangeColor}>
                 <option value="">Pick a color...</option>
                 <option value="red">Red</option>
                 <option value="green">Green</option>

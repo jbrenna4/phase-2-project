@@ -14,10 +14,10 @@ function HomePage() {
 
   const [paintings, setPaintings] = useState([])
 
-  //const [searchTerm, setSearchTerm] = useState("");
-  //console.log(searchTerm);
+  const [searchColor, setSearchColor] = useState("");
 
-  const [page, setPage] = useState("/")
+
+  //const [page, setPage] = useState("/")
 
 
   useEffect(() => {
@@ -29,6 +29,9 @@ function HomePage() {
       .then(setPaintings);
 
   }, []);
+
+  const filteredPaintings = paintings.filter((painting) => painting.colors.toLowerCase().includes(searchColor.toLowerCase()))
+  console.log(filteredPaintings);
 
 //  function handleChange(e){
 //    onChange(e.target.value);
@@ -43,19 +46,19 @@ function HomePage() {
   return (
     <main>
 
-      <NavBar onChangePage={setPage} />
+      <NavBar onChangeColor={setSearchColor} searchColor = {searchColor}/>
       <Switch>
           <Route path="/about">
               <Bio />
           </Route>
           <Route path="/paintings">
-            <PaintingList paintings = {paintings}/>
+            <PaintingList paintings = {filteredPaintings}/>
           </Route>
           <Route path="/contact">
               <Contact />
           </Route>
           <Route exact path="/">
-            <PaintingList paintings = {paintings}/>
+            <PaintingList paintings = {filteredPaintings}/>
           </Route>
           <Route path="*">
             <h1>404 not found</h1>
