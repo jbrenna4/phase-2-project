@@ -1,4 +1,5 @@
 import React from "react";
+import RandomQuote from "./RandomQuote";
 
 
 function NavBar() {
@@ -35,6 +36,7 @@ function NavBar() {
               Sort by season
             </label>
           </div>
+          <RandomQuote />
         </ul>
     </nav>
   )
