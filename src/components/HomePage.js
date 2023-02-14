@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import PaintingList from "./PaintingList";
+import NavBar from "./NavBar";
 
 
 function HomePage() {
@@ -15,7 +16,7 @@ function HomePage() {
       .then(setPaintings);
 
   }, []);
-
+  
 //  function handleChange(e){
 //    onChange(e.target.value);
 
@@ -24,6 +25,7 @@ function HomePage() {
 
   return (
     <main>
+      <NavBar />
       <PaintingList paintings = {paintings} />
     </main>
   );
