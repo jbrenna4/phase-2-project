@@ -43,7 +43,6 @@ function NavBar() {
               Sort by season
             </label>
           </div>
-          <RandomQuote />
         </ul>
     </nav>
   )
