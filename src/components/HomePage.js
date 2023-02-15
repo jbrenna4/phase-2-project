@@ -16,6 +16,8 @@ function HomePage() {
 
   const [searchColor, setSearchColor] = useState("");
 
+  const [comment, setComment] = useState("");
+
 
   //const [page, setPage] = useState("/")
 
@@ -29,6 +31,19 @@ function HomePage() {
       .then(setPaintings);
 
   }, []);
+
+  function handlePatch(newCommentObj) {
+    const patchedArray = paintings.map((painting) => {
+      if (painting.id === newCommentObj.id) {
+        return newCommentObj 
+      }
+      else {
+        return painting
+      }
+    });
+    setPaintings(patchedArray)
+
+  };
 
   const filteredPaintings = paintings.filter((painting) => painting.colors.toLowerCase().includes(searchColor.toLowerCase()))
   console.log(filteredPaintings);
@@ -52,13 +67,13 @@ function HomePage() {
               <Bio />
           </Route>
           <Route path="/paintings">
-            <PaintingList paintings = {filteredPaintings}/>
+            <PaintingList paintings = {filteredPaintings} comment = {comment} onChangeComment = {setComment} handlePatch ={handlePatch}/>
           </Route>
           <Route path="/contact">
               <Contact />
           </Route>
           <Route exact path="/">
-            <PaintingList paintings = {filteredPaintings}/>
+            <PaintingList paintings = {filteredPaintings} comment = {comment} onChangeComment = {setComment} handlePatch ={handlePatch}/>
           </Route>
           <Route path="*">
             <h1>404 not found</h1>
