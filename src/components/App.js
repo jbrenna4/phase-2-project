@@ -8,6 +8,7 @@ import HomePage from "./HomePage";
 
 import BottomPage from "./BottomPage";
 import SearchBar from "./SearchBar";
+import RandomQuote from "./RandomQuote";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Header />
       <HomePage />
       <BottomPage />
+      <RandomQuote />
       
     </div>
   );

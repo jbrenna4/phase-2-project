@@ -3,25 +3,26 @@ import React, {useState, useEffect} from "react";
 function RandomQuote(){
 
     const [quote, setQuote] = useState([]);
-    
+    const [randNum, setRandNum] = useState(1);
+  
     useEffect(() => {
-        fetch("https://api.bobross.dev/api/10"
-        , 
-        
-            {mode: 'no-cors'},
-        
-    )
-        .then(r=>r.json())
-        .then(data=>console.log(data))
-    },[]);
+      fetch(`http://localhost:3000/quotes/${randNum}`)
+        .then(res => res.json())
+        .then((quote) => setQuote(quote))
+    },[randNum]);
 
-    function renderQuote(){
-        // console.log(quote);
+    console.log(quote);
+
+    const randomNumber = () => {
+        setRandNum(Math.floor(Math.random()*23)+1)
     }
+
+    console.log(randNum);
     
     return(
         <div className="randomQuote">
-            <p>{renderQuote} </p>
+            <button className="quoteButton" onClick={randomNumber}>Random Quote Button</button>
+            <p style={{color:"green"}}>{quote.quote}</p>
         </div>
     )
 }

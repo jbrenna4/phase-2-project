@@ -47,7 +47,6 @@ function NavBar({ searchColor, onChangeColor }) {
               Sort by season
             </label>
           </div>
-          <RandomQuote />
         </ul>
     </nav>
   )
