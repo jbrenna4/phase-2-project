@@ -1,30 +1,43 @@
 import React, { useState } from "react" ;
+import PaintingCardBack from "./PaintingCardBack";
+import PaintingCardFront from "./PaintingCardFront";
 
-function PaintingCard({ name, image, season, youtube}) {
+function PaintingCard({ name, image, season, youtube, id, comment, onChangeComment, numColors, comments, handlePatch }) {
 
-  const [clicked, setClicked] = useState(true);
+  const [showFront, setShowFront] = useState(true);
 
+  function handleClick(){
+    setShowFront((showFront) => !showFront);
+  }
 
-     function handleClick() {
-     if (clicked === true) {
-       setClicked(false);
-   }
-    else {
-      setClicked(true);
-    }}
   return (
-    <div>
-    <li className="card">
-      <h4>{name}</h4>
-      <img 
-      src={image} 
-      alt={name} 
-      // onClick = {handleClick}
-      />
-      <p>Season: {season}</p>      
-      <p>{youtube}</p>
-    </li>
-    </div>
+    showFront? 
+    <PaintingCardFront 
+      name = {name}
+      image = {image}
+      youtube = {youtube}
+      season = {season}
+      showFront = {showFront}
+      onChangeShowFront = {setShowFront}
+      handleClick = {handleClick}/> 
+    :
+
+    <PaintingCardBack 
+    id = {id}
+    name = {name}
+    image = {image}
+    youtube = {youtube}
+    season = {season}
+    numColors = {numColors}
+    showFront = {showFront}
+    onChangeShowFront = {setShowFront}
+    handleClick = {handleClick}
+    comment = {comment}
+    onChangeComment = {onChangeComment}
+    comments = {comments}
+    handlePatch = {handlePatch}
+    />
+      
   );
 }
 

@@ -28,7 +28,11 @@
       "Titanium_White": 1,
       "Van_Dyke_Brown": 1,
       "Yellow_Ochre": 0,
-      "Alizarin_Crimson": 1
+      "Alizarin_Crimson": 1,
+      "comments": [
+        "taco",
+        "boy"
+      ]
     },
     {
       "id": 2,
@@ -58,7 +62,8 @@
       "Titanium_White": 1,
       "Van_Dyke_Brown": 1,
       "Yellow_Ochre": 0,
-      "Alizarin_Crimson": 1
+      "Alizarin_Crimson": 1,
+      "comments": []
     },
     {
       "id": 3,
@@ -88,7 +93,8 @@
       "Titanium_White": 1,
       "Van_Dyke_Brown": 1,
       "Yellow_Ochre": 0,
-      "Alizarin_Crimson": 1
+      "Alizarin_Crimson": 1,
+      "comments": []
     },
     {
       "id": 4,
@@ -118,7 +124,8 @@
       "Titanium_White": 1,
       "Van_Dyke_Brown": 1,
       "Yellow_Ochre": 0,
-      "Alizarin_Crimson": 0
+      "Alizarin_Crimson": 0,
+      "comments": []
     },
     {
       "id": 5,
@@ -148,7 +155,8 @@
       "Titanium_White": 1,
       "Van_Dyke_Brown": 1,
       "Yellow_Ochre": 0,
-      "Alizarin_Crimson": 1
+      "Alizarin_Crimson": 1,
+      "comments": []
     },
     {
       "id": 6,
@@ -178,7 +186,8 @@
       "Titanium_White": 1,
       "Van_Dyke_Brown": 1,
       "Yellow_Ochre": 0,
-      "Alizarin_Crimson": 0
+      "Alizarin_Crimson": 0,
+      "comments": []
     },
     {
       "id": 7,
@@ -208,7 +217,8 @@
       "Titanium_White": 1,
       "Van_Dyke_Brown": 1,
       "Yellow_Ochre": 0,
-      "Alizarin_Crimson": 1
+      "Alizarin_Crimson": 1,
+      "comments": []
     },
     {
       "id": 8,
@@ -238,7 +248,8 @@
       "Titanium_White": 1,
       "Van_Dyke_Brown": 1,
       "Yellow_Ochre": 0,
-      "Alizarin_Crimson": 1
+      "Alizarin_Crimson": 1,
+      "comments": []
     },
     {
       "id": 9,
@@ -268,7 +279,8 @@
       "Titanium_White": 1,
       "Van_Dyke_Brown": 1,
       "Yellow_Ochre": 0,
-      "Alizarin_Crimson": 1
+      "Alizarin_Crimson": 1,
+      "comments": []
     },
     {
       "id": 10,
@@ -298,7 +310,8 @@
       "Titanium_White": 1,
       "Van_Dyke_Brown": 1,
       "Yellow_Ochre": 0,
-      "Alizarin_Crimson": 1
+      "Alizarin_Crimson": 1,
+      "comments": []
     },
     {
       "id": 11,

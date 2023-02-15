@@ -15,7 +15,7 @@ function NavBar({ searchColor, onChangeColor }) {
 
 
     return (
-    <nav class="topnav">
+    <nav className="topnav">
         <ul>
           <li>
             <NavLink exact to="/">Home</NavLink>
