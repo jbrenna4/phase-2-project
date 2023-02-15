@@ -3,26 +3,26 @@ import React, {useState, useEffect} from "react";
 function RandomQuote(){
 
     const [quote, setQuote] = useState([]);
+    const [randNum, setRandNum] = useState(1);
   
     useEffect(() => {
-      fetch("http://localhost:3000/quotes")
+      fetch(`http://localhost:3000/quotes/${randNum}`)
         .then(res => res.json())
-        .then(setQuote)
-    },[]);
+        .then((quote) => setQuote(quote))
+    },[randNum]);
+
+    console.log(quote);
 
     const randomNumber = () => {
-        return Math.floor(Math.random()*23)
+        setRandNum(Math.floor(Math.random()*23)+1)
     }
 
-
-    function renderQuote(){
-        console.log(quote[randomNumber()].quote)
-    }
+    console.log(randNum);
     
     return(
         <div className="randomQuote">
-            <button className="quoteButton" >Random Quote Button</button>
-            <p>{quote}</p>
+            <button className="quoteButton" onClick={randomNumber}>Random Quote Button</button>
+            <p style={{color:"green"}}>{quote.quote}</p>
         </div>
     )
 }
