@@ -2,11 +2,12 @@ import React from "react";
 
 function Contact(){
     return (
-        <div>
-            <h2 className="contact">Contact</h2>
-            <p>an address</p>
-            <p>a phone number</p>
-            <p>an email</p>
+        <div className="bio">
+            <h2 className="bio">Contact</h2>
+            <p>425 7th Avenue</p>
+            <p>Brooklyn, NY 11215</p>
+            <p>(800) 262-7677</p>
+            <p>bobby@bobross.com</p>
         </div>
     )
 }

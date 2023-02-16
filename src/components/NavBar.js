@@ -1,6 +1,6 @@
 import React from "react";
 
-import RandomQuote from "./RandomQuote";
+//import RandomQuote from "./RandomQuote";
 
 import { NavLink } from "react-router-dom"
 
@@ -29,6 +29,10 @@ function NavBar({ searchColor, onChangeColor }) {
           <li>
             <NavLink to="/contact">Contact</NavLink>
           </li>
+          <li>
+            <NavLink to="/randombob">Random Quote</NavLink>
+          </li>
+
           <div class="search">
             <select id="select-color" placeholder="Pick a color..." onChange={handleChangeColor}>
                 <option value="">Pick a color...</option>
@@ -40,12 +44,6 @@ function NavBar({ searchColor, onChangeColor }) {
                 <option value="black">Black</option>
                 <option value="white">White</option>
               </select>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" />
-              Sort by season
-            </label>
           </div>
         </ul>
     </nav>

@@ -7,6 +7,7 @@ import NavBar from "./NavBar";
 
 import Bio from "./Bio";
 import Contact from "./Contact";
+import RandomQuote from "./RandomQuote";
 
 
 
@@ -74,6 +75,9 @@ function HomePage() {
           </Route>
           <Route exact path="/">
             <PaintingList paintings = {filteredPaintings} comment = {comment} onChangeComment = {setComment} handlePatch ={handlePatch}/>
+          </Route>
+          <Route path="/randombob">
+              <RandomQuote />
           </Route>
           <Route path="*">
             <h1>404 not found</h1>

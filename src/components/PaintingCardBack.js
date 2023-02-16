@@ -26,6 +26,7 @@ function PaintingCardBack({ name, image, id, handleClick, comments, handlePatch}
                 .then(data => handlePatch(data));
       }
 
+      const commentArray = comments.map(comment => <p>{comment}</p>)
 
 
   return (
@@ -47,7 +48,7 @@ function PaintingCardBack({ name, image, id, handleClick, comments, handlePatch}
         </label>
       </form>
       <h4>Comments</h4>
-      <p>{comments}</p>
+      <p>{commentArray}</p>
     </li>
     </div>
   );

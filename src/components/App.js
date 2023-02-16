@@ -5,10 +5,7 @@ import HomePage from "./HomePage";
 
 //import NavBar from "./NavBar";
 
-
-import BottomPage from "./BottomPage";
-import SearchBar from "./SearchBar";
-import RandomQuote from "./RandomQuote";
+//import RandomQuote from "./RandomQuote";
 
 function App() {
 
@@ -21,10 +18,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <HomePage />
-      <BottomPage />
-      <RandomQuote />
-      
+      <HomePage />     
     </div>
   );
 }
