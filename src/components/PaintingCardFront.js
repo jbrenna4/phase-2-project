@@ -5,11 +5,12 @@ function PaintingCardFront({ name, image, season, youtube, handleClick}) {
 
   return (
     <div className="paintingDiv">
-    <li className="card" onClick = {handleClick}>
+    <li className="card">
       <h3 className='paintingName'>{name}</h3>
       <img 
       src={image} 
-      alt={name} 
+      alt={name}
+      onClick = {handleClick} 
       />
       <p className="seasonLabel">Season: {season}</p>
       <a href={youtube} class='youtubeButton'>
