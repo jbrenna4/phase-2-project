@@ -2,9 +2,6 @@ import React, {useState, useEffect} from "react";
 import { Switch, Route } from "react-router-dom";
 import PaintingList from "./PaintingList";
 import NavBar from "./NavBar";
-
-//import SearchBar from "./SearchBar";
-
 import Bio from "./Bio";
 import Contact from "./Contact";
 import RandomQuote from "./RandomQuote";
@@ -18,9 +15,6 @@ function HomePage() {
   const [searchColor, setSearchColor] = useState("");
 
   const [comment, setComment] = useState("");
-
-
-  //const [page, setPage] = useState("/")
 
 
   useEffect(() => {
@@ -49,15 +43,6 @@ function HomePage() {
   const filteredPaintings = paintings.filter((painting) => painting.colors.toLowerCase().includes(searchColor.toLowerCase()))
   console.log(filteredPaintings);
 
-//  function handleChange(e){
-//    onChange(e.target.value);
-
-//  }
-//const filteredPaintings = paintings.filter((painting) => console.log(painting));
-
-//<NavBar/>
-//<PaintingList paintings = {paintings} />
-//<SearchBar placeholder="Search for a painting by color.." setSearchTerm={setSearchTerm}/>
 
   return (
     <main>
