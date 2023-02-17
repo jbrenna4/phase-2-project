@@ -32,23 +32,25 @@ function PaintingCardBack({ name, image, id, handleClick, comments, handlePatch}
   return (
     <div>
     <li className="card">
-      <h3>{name}</h3>
+      <h3 className="backCardPaintingName">{name}</h3>
       <img 
       src={image} 
       alt={name}
       onClick = {handleClick} 
       />
-      <form onSubmit={handleSubmit}>
-        <label>Enter Comment:
-            <input 
+      <div className='userForm'>
+        <form onSubmit={handleSubmit} className="form">
+          <label>Enter Comment:
+              <input 
                 type="text"
                 value= {comment}
                 onChange={(e) => setComment(e.target.value)} 
-            />
-        </label>
-      </form>
+              />
+          </label>
+        </form>
       <h4>Comments</h4>
       <p>{commentArray}</p>
+      </div>
     </li>
     </div>
   );

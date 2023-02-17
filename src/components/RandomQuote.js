@@ -21,8 +21,8 @@ function RandomQuote(){
     
     return(
         <div className="randomQuote">
-            <button className="quoteButton" onClick={randomNumber}>Random Quote</button>
-            <p style={{color:"green"}}>{quote.quote}</p>
+            <button className="quoteButton" onClick={randomNumber}>New Quote</button>
+            <p className="quoteText" style={{color:"green"}}>{quote.quote}</p>
         </div>
     )
 }
