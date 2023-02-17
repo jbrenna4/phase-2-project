@@ -32,10 +32,10 @@ code {
 
 .bobRossTop{
   font-family: Brush Script MT, Brush Script Std, cursive;
-  font-weight:100;
+  font-weight:200;
   font-size: 75px;
   color:#ffb02e;
-  text-shadow: -6px 6px 2px #000;
+  text-shadow: -6px 6px 2px #000000d0;
   /* background-color: #c9d5e3; */
   opacity: 100%;
   padding-left: 8px;
@@ -118,6 +118,27 @@ code {
 
 .instagramButton{
 }
+
+.title{
+background-image: linear-gradient(to right, #e1e6ee, snow);
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  color:#ffab24;
+  font-size: 35px;
+  text-shadow: -1px 1px 2px #000000ad;
+}
+
+.titleText{
+  margin-left: 44.2%;
+  font-weight: 100;
+
+}
+
+.titleImage{
+  max-width: 32.8%;
+  margin-left: 10px;
+  box-shadow: 2px 2px 2px rgb(152, 152, 153);
+}
+
 
 .paintingName{
   font-family: Brush Script MT, Brush Script Std, cursive;
