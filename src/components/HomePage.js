@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 import Bio from "./Bio";
 import Contact from "./Contact";
 import RandomQuote from "./RandomQuote";
+import TitlePage from "./TitlePage";
 
 
 
@@ -59,7 +60,7 @@ function HomePage() {
               <Contact />
           </Route>
           <Route exact path="/">
-            <PaintingList paintings = {filteredPaintings} comment = {comment} onChangeComment = {setComment} handlePatch ={handlePatch}/>
+            <TitlePage/>
           </Route>
           <Route path="/randombob">
               <RandomQuote />
