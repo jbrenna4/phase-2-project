@@ -21,20 +21,20 @@ function NavBar({ searchColor, onChangeColor }) {
             <NavLink exact to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/about">Bio</NavLink>
+            <NavLink to="/paintings">Paintings</NavLink>
           </li>
           <li>
-            <NavLink to="/paintings">Paintings</NavLink>
+            <NavLink to="/about">Bio</NavLink>
           </li>
           <li>
             <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/randombob">Random Quote</NavLink>
+            <NavLink to="/randombob">Words of Wisdom</NavLink>
           </li>
 
           <div class="search">
-            <select id="select-color" placeholder="Pick a color..." onChange={handleChangeColor}>
+            <select id="select-color" class="filter" placeholder="Pick a color..." onChange={handleChangeColor}>
                 <option value="">Pick a color...</option>
                 <option value="red">Red</option>
                 <option value="green">Green</option>
