@@ -15,6 +15,7 @@ code {
 .seasonLabel{
   font-style: italic;
   position: relative; top: 5px;
+  font-family: cursive;
 }
 
 .header {
@@ -38,7 +39,7 @@ code {
   /* background-color: #c9d5e3; */
   opacity: 100%;
   padding-left: 8px;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   width: fit-content;
   margin-left: 45%;
 }
@@ -49,7 +50,11 @@ code {
   background-image: linear-gradient(to bottom right, #556f4a, #889c80);
   opacity: 100%;
   overflow: hidden;
+  border-style: solid;
+  border-color: #64646465;
+  border-width: 1px;
   box-shadow: 2px 2px 2px rgb(152, 152, 153);
+  font-family: cursive
 }
 
 .topnav li{
@@ -89,6 +94,7 @@ code {
   float: right;
   color: white;
   padding: 12px 75px;
+  font-family: cursive;
 }
 
 
@@ -195,7 +201,7 @@ paintingDiv{
   border-width: 3px;
   border-color: #b68254;
   border-radius: 3px;
-  ;
+  font-family: cursive;
 }
 
 .form{
@@ -203,11 +209,34 @@ paintingDiv{
 }
 
 .bio {
-  max-width: 500px;
+  max-width: 1000px;
   margin: auto;
-  float: inline-start;
-  margin-top: 50px;
-  
+  margin-top: 60px;
+  font-family: cursive;
+}
+
+.bioText{
+  float: left;
+  margin-top: 0px;
+  max-width: 400px;
+}
+
+.bioImage{
+  float: right;
+  margin-right: 150px;
+  height: 500px;
+  box-shadow: 2px 5px 13px rgb(152, 152, 153);
+}
+
+.bobWiki{
+  padding-top: 50px;
+}
+
+.contact{
+  margin-left: 43%;
+  margin-top: 2%;
+  font-family: cursive;
+  font-size: 24px;
 }
 
 .randomQuote {
@@ -231,7 +260,7 @@ paintingDiv{
   cursor: pointer;
   direction: ltr;
   display: block;
-  font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: cursive;
   font-size: 17px;
   font-weight: 400;
   letter-spacing: -.022em;
