@@ -21,7 +21,7 @@ function NavBar({ searchColor, onChangeColor }) {
             <NavLink exact to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/paintings">Paintings</NavLink>
+            <NavLink to="/paintings">Gallery</NavLink>
           </li>
           <li>
             <NavLink to="/about">Bio</NavLink>
