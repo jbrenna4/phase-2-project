@@ -13,7 +13,7 @@ function PaintingCardFront({ name, image, season, youtube, handleClick}) {
       />
       <p className="seasonLabel">Season: {season}</p>
       <a href={youtube} class='youtubeButton'>
-      Lead the way Bob
+      Let's paint
       </a>       
       {/* <p>{youtube}</p> */}
     </li>
